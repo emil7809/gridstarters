@@ -36,46 +36,75 @@
             color: black;
         }
 
+        @media screen and (min-width:768px) {
+            main {
+                grid-template-columns: repeat(9, 1fr);
+                grid-template-rows: repeat(6, 1fr);
+                grid-auto-flow: dense;
+            }
+            article:nth-child(1n+2) {
+                background-color: #9f9f9f;
+                border: 3px solid #ffce00;
+            }
+            article:nth-child(even) {
+                color: #ffce00;
+                grid-column: span 6;
+            }
+            article:nth-child(odd) {
+                color: black;
+                grid-column: span 3;
+            }
+            article:first-child {
+                background-color: #ffffff;
+                color: black;
+                grid-column: 1/4;
+            }
+            article:last-child {
+                background-color: #ffffff;
+                color: black;
+            }
+        }
+
     </style>
 </head>
 
 <body>
     <main>
         <article>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur odio vel est consequat, ac egestas dui tempor. Nullam aliquam nulla sit amet fermentum cursus. Sed quis turpis a nisl pretium tempor eget malesuada neque. Fusce pretium scelerisque volutpat. Nam tincidunt lorem vitae massa iaculis sagittis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur odio vel est consequat, ac egestas dui tempor.</p>
         </article>
         <article>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur odio vel est consequat, ac egestas dui tempor. Nullam aliquam nulla sit amet fermentum cursus. Sed quis turpis a nisl pretium tempor eget malesuada neque. Fusce pretium scelerisque volutpat. Nam tincidunt lorem vitae massa iaculis sagittis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur odio vel est consequat, ac egestas dui tempor.</p>
         </article>
         <article>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur odio vel est consequat, ac egestas dui tempor. Nullam aliquam nulla sit amet fermentum cursus. Sed quis turpis a nisl pretium tempor eget malesuada neque. Fusce pretium scelerisque volutpat. Nam tincidunt lorem vitae massa iaculis sagittis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur odio vel est consequat, ac egestas dui tempor.</p>
         </article>
         <article>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur odio vel est consequat, ac egestas dui tempor. Nullam aliquam nulla sit amet fermentum cursus. Sed quis turpis a nisl pretium tempor eget malesuada neque. Fusce pretium scelerisque volutpat. Nam tincidunt lorem vitae massa iaculis sagittis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur odio vel est consequat, ac egestas dui tempor.</p>
         </article>
         <article>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur odio vel est consequat, ac egestas dui tempor. Nullam aliquam nulla sit amet fermentum cursus. Sed quis turpis a nisl pretium tempor eget malesuada neque. Fusce pretium scelerisque volutpat. Nam tincidunt lorem vitae massa iaculis sagittis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur odio vel est consequat, ac egestas dui tempor.</p>
         </article>
         <article>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur odio vel est consequat, ac egestas dui tempor. Nullam aliquam nulla sit amet fermentum cursus. Sed quis turpis a nisl pretium tempor eget malesuada neque. Fusce pretium scelerisque volutpat. Nam tincidunt lorem vitae massa iaculis sagittis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur odio vel est consequat, ac egestas dui tempor.</p>
         </article>
         <article>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur odio vel est consequat, ac egestas dui tempor. Nullam aliquam nulla sit amet fermentum cursus. Sed quis turpis a nisl pretium tempor eget malesuada neque. Fusce pretium scelerisque volutpat. Nam tincidunt lorem vitae massa iaculis sagittis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur odio vel est consequat, ac egestas dui tempor.</p>
         </article>
         <article>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur odio vel est consequat, ac egestas dui tempor. Nullam aliquam nulla sit amet fermentum cursus. Sed quis turpis a nisl pretium tempor eget malesuada neque. Fusce pretium scelerisque volutpat. Nam tincidunt lorem vitae massa iaculis sagittis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur odio vel est consequat, ac egestas dui tempor.</p>
         </article>
         <article>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur odio vel est consequat, ac egestas dui tempor. Nullam aliquam nulla sit amet fermentum cursus. Sed quis turpis a nisl pretium tempor eget malesuada neque. Fusce pretium scelerisque volutpat. Nam tincidunt lorem vitae massa iaculis sagittis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur odio vel est consequat, ac egestas dui tempor.</p>
         </article>
         <article>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur odio vel est consequat, ac egestas dui tempor. Nullam aliquam nulla sit amet fermentum cursus. Sed quis turpis a nisl pretium tempor eget malesuada neque. Fusce pretium scelerisque volutpat. Nam tincidunt lorem vitae massa iaculis sagittis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur odio vel est consequat, ac egestas dui tempor.</p>
         </article>
         <article>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur odio vel est consequat, ac egestas dui tempor. Nullam aliquam nulla sit amet fermentum cursus. Sed quis turpis a nisl pretium tempor eget malesuada neque. Fusce pretium scelerisque volutpat. Nam tincidunt lorem vitae massa iaculis sagittis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur odio vel est consequat, ac egestas dui tempor.</p>
         </article>
         <article>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur odio vel est consequat, ac egestas dui tempor. Nullam aliquam nulla sit amet fermentum cursus. Sed quis turpis a nisl pretium tempor eget malesuada neque. Fusce pretium scelerisque volutpat. Nam tincidunt lorem vitae massa iaculis sagittis.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce consectetur odio vel est consequat, ac egestas dui tempor.</p>
         </article>
     </main>
 </body>

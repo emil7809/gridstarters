@@ -12,24 +12,36 @@
         img {
             max-width: 100%;
             width: 100%;
+            object-fit: cover;
         }
 
         main {
-            display: grid;
+            /*display: grid;
             grid-auto-flow: dense;
             grid-template-columns: 1fr;
-            grid-auto-rows: 1fr;
+            grid-template-rows: repeat(14, 1fr);
             grid-gap: 10px;
+            margin: 0 auto;*/
+            display: grid;
+            grid-auto-flow: dense;
+            grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+            grid-auto-rows: 1fr;
             margin: 0 auto;
+            max-width: 1000px;
         }
 
-        article {}
+        article {
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
         article:nth-child(even) {
             background-color: #cecece;
             outline: 1px solid black;
-            outline-offset: -20vw;
-            padding: 22vw;
+            outline-offset: -10vw;
+            padding: 12vw;
         }
 
         @media screen and (min-width:768px) {
